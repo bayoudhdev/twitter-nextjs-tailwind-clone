@@ -10,7 +10,7 @@ interface Props {
 
 const Feed = ({tweets}: Props) => {
     return (
-        <div className="col-span-7 border-x max-h-screen lg:col-span-5 overflow-y-scroll">
+        <div className="col-span-7 border-x max-h-screen overflow-y-scroll lg:col-span-5">
             <FeedHeader/>
             <FeedPostTweet/>
             <FeedTweetList tweets={tweets}/>
