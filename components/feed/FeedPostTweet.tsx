@@ -29,7 +29,7 @@ export const FeedPostTweet = () => {
                         type="text"
                         placeholder="What's Happening ?"
                         className="h-24 w-full outline-none text-xl placeholder:text-xl"/>
-                    <div className="flex mr-2 items-center">
+                    <div className="flex items-center">
                         <div className="flex space-x-0 text-twitter flex-1">
                             <IconButton Icon={PhotographIcon}/>
                             <IconButton Icon={SearchCircleIcon}/>
@@ -39,7 +39,7 @@ export const FeedPostTweet = () => {
                         </div>
                         <button
                             disabled={!input}
-                            className="bg-twitter px-5 py-2 ml-2 font-bold text-white rounded-full disabled:opacity-40">Tweet
+                            className="bg-twitter mr-2 px-5 py-2 ml-2 font-bold text-white rounded-full disabled:opacity-40">Tweet
                         </button>
                     </div>
                 </form>
