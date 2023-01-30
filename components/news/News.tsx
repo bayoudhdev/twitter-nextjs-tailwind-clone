@@ -1,7 +1,7 @@
 import {SearchIcon} from "@heroicons/react/outline";
 import TweetEmbed from "react-tweet-embed";
 
-const Widgets = () => {
+const News = () => {
     return (<div className="col-span-2 mt-4 hidden px-2 lg:inline">
         {/** SearchBox **/}
         <div className="flex items-center space-x-2 bg-gray-100 p-3
@@ -15,10 +15,8 @@ const Widgets = () => {
         <TweetEmbed
             className="mr-5"
             tweetId="3290719465"
-            options={{ height: 400}}/>
-        {/** SearchBox **/}
-        {/** SearchBox **/}
+            options={{ height: 400}}/>s
     </div>);
 }
 
-export default Widgets;
+export default News;

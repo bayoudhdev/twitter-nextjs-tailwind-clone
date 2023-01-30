@@ -9,11 +9,11 @@ import {
 import {useState} from "react";
 import {IconButton} from "../shared/IconButton";
 
-export const FeedTweetBox = () => {
+export const FeedPostTweet = () => {
     const [input, setInput] = useState<string>('');
 
     return (
-        <div className="flex space-x-2 items-center p-5">
+        <div className="flex space-x-2 items-center p-3">
             <Image
                 className="h-14 w-14 object-cover rounded-full mt-4"
                 src="https://links.papareact.com/gll"
@@ -39,7 +39,7 @@ export const FeedTweetBox = () => {
                         </div>
                         <button
                             disabled={!input}
-                            className="bg-twitter px-5 py-2 font-bold text-white rounded-full disabled:opacity-40">Tweet
+                            className="bg-twitter px-5 py-2 ml-2 font-bold text-white rounded-full disabled:opacity-40">Tweet
                         </button>
                     </div>
                 </form>

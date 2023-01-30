@@ -1,7 +1,7 @@
 import {RefreshIcon} from "@heroicons/react/outline";
-import {TweetBox} from "./TweetBox";
-import {Tweet} from "../typings";
-import {TweetFeed} from "./TweetFeed";
+import {FeedPostTweet} from "./FeedPostTweet";
+import {Tweet} from "../../typings";
+import {FeedTweetList} from "./FeedTweetList";
 import {FeedHeader} from "./FeedHeader";
 
 interface Props {
@@ -12,8 +12,8 @@ const Feed = ({tweets}: Props) => {
     return (
         <div className="col-span-7 border-x lg:col-span-5">
             <FeedHeader/>
-            <TweetBox/>
-            <TweetFeed/>
+            <FeedPostTweet/>
+            <FeedTweetList tweets={tweets}/>
         </div>
     );
 }

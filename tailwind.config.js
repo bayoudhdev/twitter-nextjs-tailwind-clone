@@ -6,7 +6,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors : {
+        twitter: '#00ADED',
+        light_twitter: 'rgba(118,209,243,0.34)'
+      }
+    },
   },
   plugins: [],
 }
